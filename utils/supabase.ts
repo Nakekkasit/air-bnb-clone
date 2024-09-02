@@ -13,7 +13,7 @@ export const uploadImage = async (image: File) => {
   const newName = `${timestamp}-${image.name}`;
 
   const { data } = await supabase.storage.from(bucket).upload(newName, image, {
-    cacheControl: "10000",
+    cacheControl: "20000",
   });
   if (!data) throw new Error("Image upload failed");
   return supabase.storage.from(bucket).getPublicUrl(newName).data.publicUrl;
