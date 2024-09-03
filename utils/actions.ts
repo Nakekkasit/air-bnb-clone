@@ -62,6 +62,7 @@ export const createProfileAction = async (
 
 export const fetchProfileImage = async () => {
   const user = await currentUser();
+
   if (!user) return null;
 
   const profile = await db.profile.findUnique({
@@ -268,6 +269,7 @@ export const toggleFavoriteAction = async (prevState: {
 
 export const fetchFavorites = async () => {
   const user = await getAuthUser();
+  console.log(user);
   const favorites = await db.favorite.findMany({
     where: {
       profileId: user.id,

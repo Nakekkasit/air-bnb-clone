@@ -1,6 +1,7 @@
 import EmptyList from "@/components/home/EmptyList";
 import PropertiesList from "@/components/home/PropertiesList";
 import { fetchFavorites } from "@/utils/actions";
+import { getAuth } from "@clerk/nextjs/server";
 
 async function FavoritesPage() {
   const favorites = await fetchFavorites();
