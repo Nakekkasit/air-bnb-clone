@@ -5,6 +5,7 @@ import { getAuth } from "@clerk/nextjs/server";
 
 async function FavoritesPage() {
   const favorites = await fetchFavorites();
+  console.log(favorites);
 
   if (favorites.length === 0) {
     return <EmptyList />;
