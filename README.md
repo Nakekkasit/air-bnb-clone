@@ -1,5 +1,5 @@
 ## Airbnb Full-Stack App with Next.js 14+, Typescript, Clerk Auth, Prisma, Mongodb, Tailwind, Shadcn-ui, Zod,Vercel
-## Deployed App : 👉 [Air bnb clone](https://air-bnb-clone-blue-five.vercel.app/)
+## Deployed App : 👉 [Air bnb](https://air-bnb-clone-blue-five.vercel.app/)
 ### 🏛 App Features :
 ### 1. User Authentication with Clerk Auth
 - Sign-up/Login: Allow users to sign up and log in using email/password, Google.
